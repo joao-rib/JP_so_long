@@ -6,7 +6,7 @@
 /*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2024/07/11 18:24:32 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/07/15 13:17:24 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,6 @@ int	render_movement(t_game *g)
 		error_exit("Error during text rendering", g);
 	free(gm);
 	move_player(g);
-	if (g->map->layout[g->next.y][g->next.x] == 'C')
-		g->coins++;
 	return (0);
 }
 

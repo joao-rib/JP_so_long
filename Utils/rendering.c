@@ -6,7 +6,7 @@
 /*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2024/07/09 18:31:19 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/07/15 13:16:08 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ int	render_movement(t_game *g)
 	g->moves++;
 	ft_printf("Number of movements: %d\n", g->moves);
 	move_player(g);
-	if (g->map->layout[g->next.y][g->next.x] == 'C')
-		g->coins++;
 	return (0);
 }
 
