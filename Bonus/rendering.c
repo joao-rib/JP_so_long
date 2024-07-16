@@ -45,7 +45,7 @@ int	render_movement(t_game *g)
 	erase_number(g);
 	gm = ft_itoa(g->moves);
 	if (mlx_string_put(g->display.mlx, g->display.win,
-			80, g->textpos_y, 0xFFFFFF, gm))
+			70, g->textpos_y, 0xFFFFFF, gm))
 		error_exit("Error during text rendering", g);
 	free(gm);
 	move_player(g);
